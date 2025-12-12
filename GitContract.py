@@ -4,7 +4,6 @@ from PyPDF2 import PdfReader, PdfWriter
 
 def split_pdf(input_file):
     """Splits a PDF file into individual pages and names them according to specific names.
-
     Args:
         input_file (str): Path to the input PDF file.
         output_dir (str): Path to the output directory.
@@ -15,6 +14,7 @@ def split_pdf(input_file):
     with open(input_file, 'rb') as file:
         pdf_reader = PdfReader(file)
         num_pages = len(pdf_reader.pages)
+        
         #standard packet is 6 pages
         if num_pages == 6:
           
