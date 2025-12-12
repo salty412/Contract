@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; This creates the main context menu entry
+[HKEY_CURRENT_USER\Software\Classes*\shell\Split Contract]
+@="Split PDF Contract"
+
+; This sets the command to execute, pointing to the BAT file
+; The BAT file must be deployed to C:\CalahanTools\PDFSplitter\contract.bat
+"command"="C:\Windows\System32\cmd.exe /c ""C:\CalahanTools\PDFSplitter\contract.bat" "%1"""
